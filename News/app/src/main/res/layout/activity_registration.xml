@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <EditText
+        android:id="@+id/LoginEt"
+        android:layout_width="245dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="180dp"
+        android:background="@color/white"
+        android:hint="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PasswrdEt"
+        android:layout_width="245dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginEt" />
+
+    <CheckBox
+        android:id="@+id/RoleCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Администратор"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswrdEt" />
+
+    <Button
+        android:id="@+id/RegBtn"
+        android:layout_width="248dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:text="Зарегистрироваться"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RoleCB" />
+
+    <Button
+        android:id="@+id/BackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Назад"
+        app:layout_constraintStart_toEndOf="@+id/RoleCB"
+        app:layout_constraintTop_toBottomOf="@+id/PasswrdEt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

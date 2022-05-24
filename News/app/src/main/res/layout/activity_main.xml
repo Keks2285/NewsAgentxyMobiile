@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="212dp"
+        android:layout_height="22dp"
+        android:text="Авторизция"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/LoginEt"
+        android:layout_width="245dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="176dp"
+        android:background="@color/white"
+        android:hint="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/PasswordEt"
+        android:layout_width="245dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginEt" />
+
+    <Button
+        android:id="@+id/LogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:text="Войти"
+        app:layout_constraintEnd_toStartOf="@+id/Registrationbtn"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordEt" />
+
+    <Button
+        android:id="@+id/logIFinger"
+        android:layout_width="243dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="24dp"
+        android:text="Войти по отпечатку"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogIn" />
+
+    <Button
+        android:id="@+id/Registrationbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="80dp"
+        android:text="Регистрация"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordEt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
